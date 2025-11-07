@@ -1,0 +1,94 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Lato'; 
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal del login */
+.login-container {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(153, 22, 224, 0.3);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ---- EFECTO HOVER Y FOCUS (transición suave) ---- */
+
+/* AÑADIDO: input[type="email"]:hover */
+input[type="email"]:hover,
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-color: #eba8e8;
+}
+
+/* AÑADIDO: input[type="email"]:focus */
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #e2b0ef;
+    box-shadow: 0 0 5px #ebcef3;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #a231f9;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+    background-color: #9000ff;
+    transform: translateY(-2px);
+}
+
+.error {
+    color: #d93025;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    height: 1em;
+}
