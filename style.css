@@ -51,14 +51,14 @@ input[type="password"] {
 
 /* ---- EFECTO HOVER Y FOCUS (transición suave) ---- */
 
-/* AÑADIDO: input[type="email"]:hover */
+/* input[type="email"]:hover */
 input[type="email"]:hover,
 input[type="text"]:hover,
 input[type="password"]:hover {
     border-color: #eba8e8;
 }
 
-/* AÑADIDO: input[type="email"]:focus */
+/* input[type="email"]:focus */
 input[type="email"]:focus,
 input[type="text"]:focus,
 input[type="password"]:focus {

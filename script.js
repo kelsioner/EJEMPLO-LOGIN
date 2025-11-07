@@ -1,15 +1,14 @@
 // Espera a que todo el contenido HTML se cargue
 document.addEventListener("DOMContentLoaded", function() {
 
-    // 1. Seleccionar los elementos del DOM (cambiamos username por email)
+    // 1. Seleccionar los elementos del DOM
     const loginForm = document.getElementById("login-form");
-    const emailInput = document.getElementById("email"); // <--- CAMBIO
+    const emailInput = document.getElementById("email");
     const passwordInput = document.getElementById("password");
     const errorMessage = document.getElementById("error-message");
 
-    // Función sencilla para validar el formato de un email usando una expresión regular (Regex)
+    // Función sencilla para validar el formato de un email
     function isValidEmail(email) {
-        // Esta es una regex común y simple para validar emails
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
     }
@@ -24,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
         const email = emailInput.value.trim();
         const password = passwordInput.value.trim();
 
-        // 5. LÓGICA DE VALIDACIÓN ACTUALIZADA
+        // 5. LÓGICA DE VALIDACIÓN
         if (email === "" || password === "") {
             // Error si los campos están vacíos
             errorMessage.textContent = "Por favor, completa todos los campos.";
         
         } else if (!isValidEmail(email)) {
-            // NUEVO: Error si el email no tiene un formato válido
+            // Error si el email no tiene un formato válido
             errorMessage.textContent = "Por favor, introduce un correo electrónico válido.";
         
         } else {
